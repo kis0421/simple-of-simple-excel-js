@@ -1,5 +1,5 @@
 import React from "react";
-import { downLoadExcelFile } from "./simpleExcel";
+import { downloadExcelFile } from "./simpleExcel";
 
 const App = () => {
   const cellData = {
@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <button onClick={() => downLoadExcelFile(cellData, "fileName")}>download xlsx File</button>
+      <button onClick={() => downloadExcelFile(cellData, "fileName")}>download xlsx File</button>
     </div>)
 }
 

@@ -5,7 +5,7 @@ interface DownloadExcelFile {
   rows: Array<Array<string | number | undefined | null>>;
 }
 
-export function downLoadExcelFile(excelData: DownloadExcelFile, fileName: string): void {
+export function downloadExcelFile(excelData: DownloadExcelFile, fileName: string): void {
   const { rows, columns } = excelData;
   const book = utils.book_new();
 
